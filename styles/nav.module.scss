@@ -1,0 +1,119 @@
+@import "./sizes.scss";
+
+.titleWrapper {
+    left: 1rem;
+    line-height: 2;
+    position: absolute;
+    top: 1rem;
+
+    @media only screen and (min-width: $sm) {
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .link {
+        font-weight: 700;
+    }
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+
+    @media only screen and (min-width: $sm) {
+        right: 2rem;
+        top: 2rem;
+    }
+
+    .navList {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @media only screen and (min-width: $sm) {
+            display: inline-block;
+        }
+    }
+
+    .listItem {
+        color: var(--pink);
+        display: inline-block;
+        margin-right: 2rem;
+
+        .active {
+            font-weight: 700;
+        }
+    }
+
+    .menuBtn {
+        background-color: var(--pink);
+        border-radius: 50%;
+        display: inline-block;
+        content: '';
+        height: 2rem;
+        transform: scale(.5);
+        width: 2rem;
+        z-index: 2;
+
+        &:hover {
+            cursor: pointer
+        }
+    }
+}
+
+.menuDrawer {
+    background-color: var(--pink);
+    color: white;
+    content: '';
+    display: block;
+    height: 100%;
+    max-width: 380px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    width: 100vw;
+    z-index: 1;
+
+    .drawerContent {
+        bottom: 2rem;
+        left: 1rem;
+        position: absolute;
+        width: calc(100% - 2rem);
+    }
+
+    .menuList {
+        list-style: none;
+        margin: 0;
+        margin-bottom: 1rem;
+        padding: 0;
+
+        .menuListItem {
+            font-size: 4em;
+            font-weight: 900;
+            letter-spacing: -.05em;
+        }
+    }
+
+    .blogList {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        list-style: none;
+        font-size: 1.1em;
+        font-weight:  400;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    .copyright {
+        display: block;
+        margin-top: 5rem;
+        opacity: .5;
+    }
+}

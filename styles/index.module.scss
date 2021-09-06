@@ -1,0 +1,60 @@
+@import "./sizes.scss";
+
+.heroSection {
+    padding: 1rem;
+    padding-top: 9rem;
+
+    @media only screen and (min-width: $sm) {
+        height: 100vh;
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+}
+
+.heroTitle {
+    font-size: clamp(3em, 9vw, 14em);
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -.05em;
+
+    .titleAnim {
+        overflow: hidden;
+    }
+
+    span {
+        display: block;
+        margin-bottom: .2em;
+    }
+}
+
+.heroP {
+    margin: 0;
+    margin-top: 3rem;
+    max-width: 320px;
+    padding: 0;
+    z-index: 0;
+
+    @media only screen and (min-width: $sm) {
+        bottom: 2rem;
+        margin: 0;
+        right: 2rem;
+        position: absolute;
+    }
+}
+
+.socialWrapper {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: var(--pink);
+
+    @media only screen and (min-width: $sm) {
+        bottom: 2rem;
+        left: 2rem;
+        margin: 0;
+        position: absolute;
+    }
+
+    div {
+        margin-right: .5rem !important;
+    }
+}

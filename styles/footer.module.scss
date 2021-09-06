@@ -1,0 +1,17 @@
+@import "./sizes.scss";
+
+.mainFooter {
+    background-color: black;
+    min-height: 420px;
+    padding: 1rem;
+
+    @media only screen and (min-width: $sm) {
+        padding: 3rem;
+    }
+}
+
+.footerTitle {
+    color: white;
+    font-size: clamp(18px, 10vw, 75px);
+    font-weight: 900;
+}
