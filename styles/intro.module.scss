@@ -1,0 +1,102 @@
+@import "./sizes.scss";
+
+.introSection {
+    background-color: black;
+    padding: 1rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+
+    @media only screen and (min-width: $sm) {
+        padding: 2rem;
+        padding-bottom: 8rem;
+        padding-top: 8rem;
+    }
+}
+
+
+.introContent {
+
+    @media only screen and (min-width: $sm) {
+        width: 60%;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+.introTitle {
+    color: white;
+    font-size: clamp(3em, 6vw, 12em);
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -.05em;
+    overflow: hidden;
+
+    span {
+        display: block;
+        margin-bottom: .2em;
+    }
+}
+
+.introWrapper {
+
+    @media only screen and (min-width: $sm) {
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+.introP {
+    color: white;
+    font-size: 1em;
+    max-width: 400px;
+
+    @media only screen and (min-width: $sm) {
+        font-size: 1.2em;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 1em;
+    }
+}
+
+.imgContainer {
+    width: 320px;
+}
+
+.vimeoContainer {
+    display: block;
+    flex: 1;
+    position: relative;
+    margin: 6rem auto;
+    max-width: 300px;
+
+    @media only screen and (min-width: $sm) {
+        margin: 0 auto;
+        max-width: 340px;
+    }
+
+    p {
+        color: grey;
+        font-style:italic;
+    }
+}
+
+.vimeoWrapper {
+    padding-top: 167%;
+}
+
+.vimeoVideo{
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}

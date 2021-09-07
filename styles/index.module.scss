@@ -12,7 +12,7 @@
 }
 
 .heroTitle {
-    font-size: clamp(3em, 9vw, 14em);
+    font-size: clamp(3em, 9vw, 12em);
     font-weight: 900;
     line-height: .9;
     letter-spacing: -.05em;
@@ -28,9 +28,9 @@
 }
 
 .heroP {
+    font-size: 1.05em;
     margin: 0;
     margin-top: 3rem;
-    max-width: 320px;
     padding: 0;
     z-index: 0;
 
@@ -40,12 +40,21 @@
         right: 2rem;
         position: absolute;
     }
+
+    .pAnim {
+        display: block;
+        overflow: hidden;
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
 .socialWrapper {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    color: var(--pink);
+    color: var(--main);
 
     @media only screen and (min-width: $sm) {
         bottom: 2rem;

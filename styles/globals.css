@@ -9,8 +9,11 @@ body {
     font-weight: 400;
 }
 
+html {
+    background-color: black;
+}
+
 p {
-    font-size: clamp(16px, 1.4vw, 21px);
     line-height: 1.5;
 }
 
@@ -24,5 +27,5 @@ a {
 }
 
 :root {
-    --pink: #FF006C;
+    --main: #FF006C;
 }

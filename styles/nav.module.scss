@@ -22,7 +22,7 @@
     position: fixed;
     right: 1rem;
     top: 1rem;
-    z-index: 1;
+    z-index: 9;
 
     @media only screen and (min-width: $sm) {
         right: 2rem;
@@ -41,9 +41,10 @@
     }
 
     .listItem {
-        color: var(--pink);
+        color: var(--main);
         display: inline-block;
         margin-right: 2rem;
+        transition: color .6s;
 
         .active {
             font-weight: 700;
@@ -51,12 +52,13 @@
     }
 
     .menuBtn {
-        background-color: var(--pink);
+        background-color: var(--main);
         border-radius: 50%;
         display: inline-block;
         content: '';
         height: 2rem;
         transform: scale(.5);
+        transition: background-color .6s;
         width: 2rem;
         z-index: 2;
 
@@ -66,8 +68,28 @@
     }
 }
 
+.whiteNavbar {
+    .listItem {
+        color: white;
+        transition: color .6s;
+    }
+    .menuBtn {
+        background-color: white;
+        transition: background-color .6s;
+    }
+
+    .menuDrawer {
+        background-color: white;
+        color: var(--main);
+
+        .blogList {
+            border-color: var(--main)
+        }
+    }
+}
+
 .menuDrawer {
-    background-color: var(--pink);
+    background-color: var(--main);
     color: white;
     content: '';
     display: block;
@@ -81,9 +103,9 @@
     z-index: 1;
 
     .drawerContent {
-        bottom: 2rem;
         left: 1rem;
         position: absolute;
+        top: 6rem;
         width: calc(100% - 2rem);
     }
 
@@ -101,7 +123,7 @@
     }
 
     .blogList {
-        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-top: 1px solid white;
         list-style: none;
         font-size: 1.1em;
         font-weight:  400;
@@ -110,10 +132,12 @@
         padding: 0;
         padding-top: 3rem;
     }
+}
 
-    .copyright {
-        display: block;
-        margin-top: 5rem;
-        opacity: .5;
-    }
+.copyright {
+    bottom: 2rem;
+    display: block;
+    left: 2rem;
+    margin-top: 5rem;
+    position: absolute;
 }

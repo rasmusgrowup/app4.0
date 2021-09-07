@@ -13,12 +13,14 @@ export default function Navbar() {
     const [tl] = useState(gsap.timeline({ paused: true }));
 
     useEffect(() => {
+
         tl.to('.menu', {
             xPercent: -100,
             delay: 0,
             duration: 1,
             ease: 'Power3.easeInOut'
         })
+
         tl.to('#menuBtn', {
             backgroundColor: 'white',
             delay: 0,
@@ -26,7 +28,9 @@ export default function Navbar() {
             ease: 'Power3.easeInOut',
             transform: 'scale(1)'
         }, '=-50%')
+
         tl.reverse();
+
     }, []);
 
     const toggleMenu = () => {
@@ -40,7 +44,7 @@ export default function Navbar() {
 
     return(
         <>
-            <div className={css.navbar}>
+            <div className={`${css.navbar} navbar`}>
                 <ul className={css.navList}>
                     <li className={css.listItem}>
                         <Link href='/'><a className={router.pathname == "/" ? `${css.active}` : ""}>Om os</a></Link>
@@ -68,8 +72,8 @@ export default function Navbar() {
                             <li>Hvilket CMS-system skal i vælge?</li>
                             <li>Her er 5 tips til din start-up</li>
                         </ul>
-                        <span className={css.copyright}>©2021 Growup Ivs | 39862540</span>
                     </div>
+                    <span className={css.copyright}>©2021 Growup Ivs | 39862540</span>
                 </div>
             </div>
         </>
