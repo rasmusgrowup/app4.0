@@ -6,7 +6,7 @@
 
     @media only screen and (min-width: $sm) {
         height: 100vh;
-        padding: 2rem;
+        padding: 3rem;
         padding-top: 4rem;
     }
 }
@@ -37,7 +37,7 @@
     @media only screen and (min-width: $sm) {
         bottom: 2rem;
         margin: 0;
-        right: 2rem;
+        right: 3rem;
         position: absolute;
     }
 
@@ -55,13 +55,7 @@
     margin-bottom: 2rem;
     margin-top: 2rem;
     color: var(--main);
-
-    @media only screen and (min-width: $sm) {
-        bottom: 2rem;
-        left: 2rem;
-        margin: 0;
-        position: absolute;
-    }
+    overflow: hidden;
 
     div {
         margin-right: .5rem !important;

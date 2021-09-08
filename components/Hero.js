@@ -4,7 +4,7 @@ import Instagram from '../public/instagram.svg'
 import LinkedIn from '../public/linkedin.svg'
 import React, { useState, useEffect } from "react";
 import { gsap } from 'gsap';
-import css from '../styles/index.module.scss'
+import css from '../styles/hero.module.scss'
 
 export default function Hero() {
 
@@ -41,17 +41,18 @@ export default function Hero() {
                     <div className={css.titleAnim}><span className='titleAnim'>bureau.</span></div>
                 </h1>
                 <div className={css.heroP}>
-                    <span className={css.pAnim}><p className='pAnim'>Gennem nysgerrighed, grundighed og</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>kreativ tænkning udforsker vi, hvordan</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>sociale medier og moderne web-design</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>kan hjælpe start-ups og mellemstore</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>virksomheder med at vokse sig</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>større.</p></span>
-                </div>
-                <div className={css.socialWrapper}>
-                    <Link href='https://instagram.com/growupstudio.dk'><a target='_blank'><Image src={Instagram} /></a></Link>
-                    <Link href='https://www.linkedin.com/company/growup-studio/'><a target='_blank'><Image src={LinkedIn} /></a></Link>
-                    <span>__følg os her</span>
+                    <span className={css.pAnim}><p className='pAnim'><strong>Kort om os</strong> — Vi hjælper start-ups og mellemstore </p></span>
+                    <span className={css.pAnim}><p className='pAnim'>virksomheder med at udvikle deres forretninger. Vores </p></span>
+                    <span className={css.pAnim}><p className='pAnim'>Web og SoMe løsninger skræddersyes til den enkelte</p></span>
+                    <span className={css.pAnim}><p className='pAnim'>kunde, hvilket sikrer en positiv udvikling af brandet og</p></span>
+                    <span className={css.pAnim}><p className='pAnim'>at alle behov opfyldes.</p></span>
+                    <div className={css.socialWrapper}>
+                        <div className='pAnim'>
+                            <Link href='https://instagram.com/growupstudio.dk'><a target='_blank'><Image src={Instagram} /></a></Link>
+                            <Link href='https://www.linkedin.com/company/growup-studio/'><a target='_blank'><Image src={LinkedIn} /></a></Link>
+                            <span>__følg os her</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

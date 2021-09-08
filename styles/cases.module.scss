@@ -1,6 +1,13 @@
 .casesSection {
     background-color: white;
     min-height: 100vh;
+    padding: 6rem 3rem;
     position: relative;
     z-index: 3;
+}
+
+.imageCaption {
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+    width: 100%;
 }
