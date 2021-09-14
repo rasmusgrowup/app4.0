@@ -98,7 +98,7 @@ export default function Cases() {
                             <div className={css.imageWrapper} style={{ backgroundColor: '#ECECF4' }}>
                                     <Image src={Tinekhome} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
-                            <p><strong>Tinekhome</strong> — Nyt visuelt univers på Tinekhome's netbutik</p>
+                            <p><strong>Tinekhome</strong> — Nyt visuelt univers på Tinekhomes netbutik</p>
                             <span className={css.caseTasks}>Visuel konceptudvikling | Frontend-udvikling</span>
                         </div>
                     </Link>
@@ -126,7 +126,7 @@ export default function Cases() {
                     <Link href='/' >
                         <div className={`${css.caseTeaser} ${css.teaserhigh}`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#5FA6C8' }}>
-                                    <Image src={Kron1} layout='responsive' objectFit='cover' objectPosition='center' quality='100' quality='100' className={`${css.image} imageAnim`}/>
+                                    <Image src={Kron1} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
                             <p><strong> Stöj</strong> — Onlineportfolio til et kommercielt Odenseansk fotostudie</p>
                             <span className={css.caseTasks}>Nextjs | Visuel konceptudvikling</span>
