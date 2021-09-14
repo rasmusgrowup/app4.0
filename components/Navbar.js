@@ -17,7 +17,7 @@ export default function Navbar() {
         tl.to('.menu', {
             xPercent: -100,
             delay: 0,
-            duration: 1,
+            duration: .8,
             ease: 'Power3.easeInOut'
         })
 
@@ -27,7 +27,7 @@ export default function Navbar() {
             duration: .3,
             ease: 'Power3.easeInOut',
             transform: 'scale(1)'
-        }, '=-50%')
+        }, '=-25%')
 
         tl.reverse();
 
@@ -65,12 +65,9 @@ export default function Navbar() {
                             <li className={css.menuListItem}><Link href='/'><a className={router.pathname == "/ydelser" ? `${css.active}` : ""}>Ydelser</a></Link></li>
                             <li className={css.menuListItem}><Link href='/'><a className={router.pathname == "/kontakt" ? `${css.active}` : ""}>Kontakt</a></Link></li>
                         </ul>
-                        <ul className={css.blogList}>
-                            <li>Vigtige tips til jeres SEO</li>
-                            <li>Derfor har i brug for SEO</li>
-                            <li>Overvej dette inden i investerer i SoMe</li>
-                            <li>Hvilket CMS-system skal i vælge?</li>
-                            <li>Her er 5 tips til din start-up</li>
+                        <ul className={css.secList}>
+                        <li className={css.secListItem}><Link href='/'><a className={router.pathname == "/" ? `${css.active}` : ""}>Bloggen</a></Link></li>
+                        <li className={css.secListItem}><Link href='/'><a className={router.pathname == "/" ? `${css.active}` : ""}>Datapolitik</a></Link></li>
                         </ul>
                     </div>
                     <span className={css.copyright}>©2021 Growup Ivs | 39862540</span>

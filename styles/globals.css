@@ -27,28 +27,58 @@ a {
 }
 
 :root {
-    --main: #FF006C;
+    --main:  #FD6C21;
+    --main: #FD2121;
+    --main: #EE1D52;
+/*    --main: #9D60FF; */
+/*    --main: #FF006C; */
+    --grey: #B2B2B2;
 }
 
 /* custom cursor */
 .cursor {
-    width: 30px;
-    height: 30px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
+    mix-blend-mode: screen;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 99;
 }
 
-.cursor::after {
-    background-color: #FF006C;
+/*
+.cursor::before {
+    background-color: black;
     content: '';
-    width: 2rem;
-    height: 2rem;
+    width: .5rem;
+    height: .5rem;
     position: absolute;
     border-radius: 50%;
-    top: -1rem;
-    left: -1rem;
-    z-index: 99;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+*/
+
+.cursor::after {
+    background-color: var(--main);
+/*    background-color: #FD2121;
+    background-color: #0093FF;
+    background-color: #FD2121;
+    border: 2px solid #FF006C;*/
+    content: '';
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 @keyframes cursorAnim {

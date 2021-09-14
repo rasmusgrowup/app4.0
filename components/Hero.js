@@ -13,6 +13,7 @@ export default function Hero() {
             yPercent: 120
         })
         gsap.set('.pAnim', {
+            opacity: 0,
             yPercent: 120
         })
         gsap.to('.titleAnim', {
@@ -23,6 +24,7 @@ export default function Hero() {
             stagger: .1
         })
         gsap.to('.pAnim', {
+            opacity: 1,
             yPercent: 0,
             duration: 1.2,
             ease: 'Power2.easeOut',
@@ -40,12 +42,8 @@ export default function Hero() {
                     <div className={css.titleAnim}><span className='titleAnim'>social content</span></div>
                     <div className={css.titleAnim}><span className='titleAnim'>bureau.</span></div>
                 </h1>
-                <div className={css.heroP}>
-                    <span className={css.pAnim}><p className='pAnim'><strong>Kort om os</strong> — Vi hjælper start-ups og mellemstore </p></span>
-                    <span className={css.pAnim}><p className='pAnim'>virksomheder med at udvikle deres forretninger. Vores </p></span>
-                    <span className={css.pAnim}><p className='pAnim'>Web og SoMe løsninger skræddersyes til den enkelte</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>kunde, hvilket sikrer en positiv udvikling af brandet og</p></span>
-                    <span className={css.pAnim}><p className='pAnim'>at alle behov opfyldes.</p></span>
+                <div className={css.heroMessage}>
+                    <span className={css.pAnim}><p className='pAnim'><strong>Kort om os</strong> — Vi hjælper start-ups og mellemstore virksomheder med at udvikle deres forretninger. Vores Design, Web og SoMe løsninger skræddersyes til den enkelte kunde, hvilket sikrer en positiv udvikling af brandet og at alle behov opfyldes.</p></span>
                     <div className={css.socialWrapper}>
                         <div className='pAnim'>
                             <Link href='https://instagram.com/growupstudio.dk'><a target='_blank'><Image src={Instagram} /></a></Link>

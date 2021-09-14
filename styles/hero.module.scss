@@ -1,21 +1,35 @@
 @import "./sizes.scss";
 
 .heroSection {
+    min-height: 680px;
     padding: 1rem;
     padding-top: 9rem;
+    position: relative;
 
     @media only screen and (min-width: $sm) {
-        height: 100vh;
         padding: 3rem;
         padding-top: 4rem;
+    }
+
+    @media only screen and (min-width: $l) {
+        padding-top: 2rem;
     }
 }
 
 .heroTitle {
-    font-size: clamp(3em, 9vw, 12em);
+    font-size: clamp(3em, 8vw, 8em);
     font-weight: 900;
     line-height: .9;
     letter-spacing: -.05em;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: $sm) {
+        margin-bottom: 4rem;
+    }
+
+    @media only screen and (min-width: $l) {
+        margin-bottom: 0;
+    }
 
     .titleAnim {
         overflow: hidden;
@@ -27,18 +41,27 @@
     }
 }
 
-.heroP {
-    font-size: 1.05em;
-    margin: 0;
-    margin-top: 3rem;
+.heroMessage {
+    margin: 0 auto;
+    max-width: 460px;
     padding: 0;
     z-index: 0;
 
     @media only screen and (min-width: $sm) {
-        bottom: 2rem;
         margin: 0;
-        right: 3rem;
-        position: absolute;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    @media only screen and (min-width: $m) {
+        margin: 0;
+        margin-left: auto;
+        margin-right: 3rem;
+        margin-top: -6rem;
+    }
+
+    @media only screen and (min-width: $l) {
+        margin-top: -2rem;
     }
 
     .pAnim {

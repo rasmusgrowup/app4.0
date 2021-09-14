@@ -35,7 +35,7 @@
         margin: 0;
         padding: 0;
 
-        @media only screen and (min-width: $sm) {
+        @media only screen and (min-width: $m) {
             display: inline-block;
         }
     }
@@ -45,6 +45,26 @@
         display: inline-block;
         margin-right: 2rem;
         transition: color .6s;
+
+        &:after {
+            background-color: white;
+            display: block;
+            content: '';
+            height: 2px;
+            transition: width .3s;
+            width: 0%;
+        }
+
+        &:hover {
+            &:after {
+                background-color: var(--main);
+                display: block;
+                content: '';
+                height: 2px;
+                transition: width .3s;
+                width: 100%;
+            }
+        }
 
         .active {
             font-weight: 700;
@@ -73,6 +93,7 @@
         color: white;
         transition: color .6s;
     }
+
     .menuBtn {
         background-color: white;
         transition: background-color .6s;
@@ -116,9 +137,63 @@
         padding: 0;
 
         .menuListItem {
+            display: flex;
             font-size: 4em;
             font-weight: 900;
             letter-spacing: -.05em;
+
+            a:hover {
+                &:after {
+                    background-color: white;
+                    display: block;
+                    content: '';
+                    height: 6px;
+                    transition: width .3s;
+                    width: 100%;
+                }
+            }
+
+            a:after {
+                background-color: white;
+                display: block;
+                content: '';
+                height: 6px;
+                transition: width .3s;
+                width: 0%;
+            }
+        }
+    }
+
+    .secList {
+        font-size: 1.5em;
+        list-style: none;
+        line-height: 1.5;
+        margin: 0;
+        margin-top: 3rem;
+        padding: 0;
+
+        li {
+            display: flex;
+        }
+
+        a:hover {
+            &:after {
+                background-color: white;
+                display: block;
+                content: '';
+                height: 3px;
+                transition: width .3s;
+                width: 100%;
+            }
+        }
+
+        a:after {
+            background-color: white;
+            display: block;
+            content: '';
+            height: 3px;
+            transition: width .3s;
+            width: 0%;
         }
     }
 
@@ -137,7 +212,7 @@
 .copyright {
     bottom: 2rem;
     display: block;
-    left: 2rem;
+    left: 1rem;
     margin-top: 5rem;
     position: absolute;
 }

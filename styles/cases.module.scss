@@ -1,13 +1,79 @@
+@import "./sizes.scss";
+
 .casesSection {
     background-color: white;
-    min-height: 100vh;
-    padding: 6rem 3rem;
+    padding: 6rem 1rem;
     position: relative;
     z-index: 3;
+
+    @media only screen and (min-width: $sm) {
+        padding: 6rem 3rem;
+    }
 }
 
-.imageCaption {
-    margin-bottom: 4rem;
-    margin-right: 4rem;
-    width: 100%;
+.casesTitleWrapper {
+    letter-spacing: -.15em;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.casesTitle {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.casesTitleSpan {
+    color: var(--main);
+}
+
+.casesMasonry {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+
+    @media only screen and (min-width: $sm) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(16, 1fr);
+        column-gap: 2rem;
+        row-gap: 3rem;
+    }
+
+    @media only screen and (min-width: $m) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(16, 1fr);
+        column-gap: 4rem;
+        row-gap: 2rem;
+    }
+}
+
+.caseTeaser {
+    cursor: pointer;
+    grid-row: span 4;
+
+    .imageWrapper {
+        border-radius: .3em;
+        max-height: 525px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+
+        .image {
+            height: 100%;
+        }
+    }
+}
+
+.teaserhigh {
+    grid-row: span 6;
+
+    .imageWrapper {
+        max-height: 1050px;
+    }
+}
+
+.caseTasks {
+    color: var(--grey);
+    display: block;
+    font-weight: lighter;
+    margin-top: 1rem;
 }
