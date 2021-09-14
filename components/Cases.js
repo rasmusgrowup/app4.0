@@ -9,7 +9,7 @@ import Pernille from '../public/Pernille_albers.jpg'
 import Stol from '../public/stol.jpg'
 import Kron1 from '../public/Kron_1.jpg'
 import Kron3 from '../public/Kron_3.jpg'
-import Lustrup from '../public/lustrup.jpg'
+import Lustrup from '../public/lustrup.JPG'
 import css from '../styles/cases.module.scss'
 import React, { useState, useEffect } from "react";
 import { gsap } from 'gsap';
