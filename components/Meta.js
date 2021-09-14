@@ -14,7 +14,7 @@ function Meta({title, keywords, description}) {
 }
 
 Meta.defaultProps = {
-    title: 'Growup | Odenseansk design, web og SoMe bureau',
+    title: 'Growup | Odenseansk Design, Web og SoMe bureau',
     keywords: 'Webdesign, SoMe, Social Content, Visuelt design, UX, UI, hjemmeside, netbutik, webshop, ecommerce, react, nextjs, wordpress, shopify',
     description: 'Vores hjemmeside og SoMe løsninger skræddersys til jeres virksomheds behov, og skaber derved de bedste forudsætninger for at øge kendskaben af jeres brand, nå ud til nye kunder og sælge flere varer / ydelser.'
 }
