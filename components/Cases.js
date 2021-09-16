@@ -64,7 +64,7 @@ export default function Cases() {
                 <div className={css.casesMasonry} gutter="4rem">
 
                     <Link href='/' >
-                        <div className={css.caseTeaser}>
+                        <div className={`${css.caseTeaser} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#F03C3C'}}>
                                     <Image src={Occ} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -74,7 +74,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={css.caseTeaser}>
+                        <div className={`${css.caseTeaser} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#FFD86E' }}>
                                 <Image src={Ti} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -84,7 +84,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={`${css.caseTeaser} ${css.teaserhigh}`}>
+                        <div className={`${css.caseTeaser} ${css.teaserhigh} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#00A0D0' }}>
                                     <Image src={ChefJen} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -94,7 +94,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={css.caseTeaser}>
+                        <div className={`${css.caseTeaser} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#ECECF4' }}>
                                     <Image src={Tinekhome} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -104,7 +104,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={`${css.caseTeaser} ${css.teaserhigh}`}>
+                        <div className={`${css.caseTeaser} ${css.teaserhigh} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#CFD976' }}>
                                     <Image src={Pral} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -114,7 +114,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={`${css.caseTeaser} ${css.teaserhigh}`}>
+                        <div className={`${css.caseTeaser} ${css.teaserhigh} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#EFD5C1' }}>
                                     <Image src={Pernille} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -124,7 +124,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={`${css.caseTeaser} ${css.teaserhigh}`}>
+                        <div className={`${css.caseTeaser} ${css.teaserhigh} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#5FA6C8' }}>
                                     <Image src={Kron1} layout='responsive' objectFit='cover' objectPosition='center' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
@@ -134,7 +134,7 @@ export default function Cases() {
                     </Link>
 
                     <Link href='/' >
-                        <div className={css.caseTeaser}>
+                        <div className={`${css.caseTeaser} linkHover`}>
                             <div className={css.imageWrapper} style={{ backgroundColor: '#E59A62' }}>
                                     <Image src={Lustrup} layout='responsive' objectFit='cover' objectPosition='bottom' quality='100' className={`${css.image} imageAnim`}/>
                             </div>
